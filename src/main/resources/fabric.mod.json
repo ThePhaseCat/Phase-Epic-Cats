@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "phaseepiccat",
 	"version": "${version}",
-	"name": "PhaseEpicCat",
+	"name": "Phase's Epic Cats",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/phaseepiccat/icon.png",
+	"icon": "assets/phase_epic_cats/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
