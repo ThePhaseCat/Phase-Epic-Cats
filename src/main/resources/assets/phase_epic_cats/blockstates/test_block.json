@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "phase_epic_cats:block/test_block" }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "phase_epic_cats:item/test_item"
+  }
+}
