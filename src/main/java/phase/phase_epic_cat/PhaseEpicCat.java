@@ -17,6 +17,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import phase.phase_epic_cat.items.EpicCatItems;
+import phase.phase_epic_cat.items.EpicCatsItemGroup;
 
 public class PhaseEpicCat implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -26,29 +28,19 @@ public class PhaseEpicCat implements ModInitializer {
 	public static final String MOD_ID = "phase_epic_cats";
 
 
-	//blocks and items
-	public static final Item TEST_ITEM = new Item(new FabricItemSettings());
+	//blocks
 	public static final Block TEST_BLOCK  = new Block(FabricBlockSettings.create().strength(1.0f));
-
-
-	private static final ItemGroup EpicCatsItemGroup = FabricItemGroup.builder()
-			.icon(() -> new ItemStack(TEST_ITEM))
-					.displayName(Text.translatable("Phase's Epic Cats"))
-					.entries((context, entries) ->{
-						entries.add(new ItemStack(TEST_ITEM));
-						entries.add(new ItemStack(TEST_BLOCK));
-					})
-					.build();
 
 	@Override
 	public void onInitialize()
 	{
 		LOGGER.info("Phase's Epic Cat Mod Main initializing!");
 
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "test_item"), TEST_ITEM);
+		EpicCatsItemGroup.registerItemGroups();
+		EpicCatItems.registerModItems();
+
 		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "test_block"), TEST_BLOCK);
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "test_block"), new BlockItem(TEST_BLOCK, new FabricItemSettings()));
-		Registry.register(Registries.ITEM_GROUP, new Identifier(MOD_ID, "phase_epic_cats"), EpicCatsItemGroup);
 
 		LOGGER.info("Phase's Epic Cat Mod Main initialized!");
 	}
