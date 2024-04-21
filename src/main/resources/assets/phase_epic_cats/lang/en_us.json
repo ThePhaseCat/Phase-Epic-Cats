@@ -3,5 +3,6 @@
 
     "item.phase_epic_cats.test_item": "Test Item",
 
-    "block.phase_epic_cats.test_block": "Test Block"
+    "block.phase_epic_cats.test_block": "Test Block",
+    "block.phase_epic_cats.cat_workplace_block": "Cat Workplace Block"
 }

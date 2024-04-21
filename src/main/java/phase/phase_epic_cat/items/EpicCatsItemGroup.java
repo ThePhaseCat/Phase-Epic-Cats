@@ -21,6 +21,7 @@ public class EpicCatsItemGroup
                     .icon(() -> new ItemStack(EpicCatItems.TEST_ITEM)).entries((displayContext, entries) -> {
                         entries.add(EpicCatItems.TEST_ITEM);
                         entries.add(EpicCatBlocks.TEST_BLOCK.asItem());
+                        entries.add(EpicCatBlocks.CAT_WORKPLACE_BLOCK.asItem());
 
                         entries.add(Items.DIAMOND);
 

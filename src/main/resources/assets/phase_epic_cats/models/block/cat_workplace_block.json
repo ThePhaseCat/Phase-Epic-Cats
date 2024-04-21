@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "phase_epic_cats:block/cat_workplace_block"
+  }
+}

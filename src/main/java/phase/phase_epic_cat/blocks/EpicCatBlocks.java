@@ -10,12 +10,16 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import phase.phase_epic_cat.PhaseEpicCat;
+import phase.phase_epic_cat.blocks.custom.CatWorkplaceBlock;
 
 public class EpicCatBlocks
 {
 
     public static final Block TEST_BLOCK = registerBlock("test_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block CAT_WORKPLACE_BLOCK = registerBlock("cat_workplace_block",
+            new CatWorkplaceBlock(FabricBlockSettings.copyOf(Blocks.ANVIL)));
 
     private static Block registerBlock(String name, Block block)
     {
