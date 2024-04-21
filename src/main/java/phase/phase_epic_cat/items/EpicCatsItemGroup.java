@@ -10,6 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import phase.phase_epic_cat.PhaseEpicCat;
+import phase.phase_epic_cat.blocks.EpicCatBlocks;
 
 public class EpicCatsItemGroup
 {
@@ -19,7 +20,7 @@ public class EpicCatsItemGroup
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.name"))
                     .icon(() -> new ItemStack(EpicCatItems.TEST_ITEM)).entries((displayContext, entries) -> {
                         entries.add(EpicCatItems.TEST_ITEM);
-                        entries.add(PhaseEpicCat.TEST_BLOCK.asItem());
+                        entries.add(EpicCatBlocks.TEST_BLOCK.asItem());
 
                         entries.add(Items.DIAMOND);
 

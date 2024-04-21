@@ -1,4 +1,7 @@
 {
     "itemgroup.name": "Phase's Epic Cats",
-    "item.phase_epic_cats.test_item": "Test Item"
+
+    "item.phase_epic_cats.test_item": "Test Item",
+
+    "block.phase_epic_cats.test_block": "Test Block"
 }

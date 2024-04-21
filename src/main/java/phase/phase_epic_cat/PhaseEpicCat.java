@@ -17,6 +17,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import phase.phase_epic_cat.blocks.EpicCatBlocks;
 import phase.phase_epic_cat.items.EpicCatItems;
 import phase.phase_epic_cat.items.EpicCatsItemGroup;
 
@@ -28,9 +29,6 @@ public class PhaseEpicCat implements ModInitializer {
 	public static final String MOD_ID = "phase_epic_cats";
 
 
-	//blocks
-	public static final Block TEST_BLOCK  = new Block(FabricBlockSettings.create().strength(1.0f));
-
 	@Override
 	public void onInitialize()
 	{
@@ -38,9 +36,8 @@ public class PhaseEpicCat implements ModInitializer {
 
 		EpicCatsItemGroup.registerItemGroups();
 		EpicCatItems.registerModItems();
+		EpicCatBlocks.registerModBlocks();
 
-		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "test_block"), TEST_BLOCK);
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "test_block"), new BlockItem(TEST_BLOCK, new FabricItemSettings()));
 
 		LOGGER.info("Phase's Epic Cat Mod Main initialized!");
 	}
