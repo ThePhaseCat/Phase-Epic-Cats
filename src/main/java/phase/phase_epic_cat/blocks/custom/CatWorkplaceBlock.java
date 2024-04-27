@@ -32,6 +32,9 @@ public class CatWorkplaceBlock extends Block
         if (!world.isClient) {
             player.sendMessage(Text.literal("Hello, world!"), false);
             world.setBlockState(pos, state.with(IS_CAT_PRESENT, true));
+            System.out.println(world.getTime());
+            //if that yields 1000, then we can spawn cats?
+            System.out.println(world.getTimeOfDay());
         }
 
         return ActionResult.SUCCESS;
