@@ -15,6 +15,11 @@ import net.minecraft.world.World;
 public class CatWorkplaceBlock extends Block
 {
 
+
+    //this block will be a crafting table where you combine a special type of egg
+    //with any block/item in the game to get a cat egg that you can place down
+    //and it will spawn a cat
+    //so uh yeah that's the plan now instead of randomly changing stuff
     public static final BooleanProperty IS_CAT_PRESENT = BooleanProperty.of("is_cat_present");
 
     public CatWorkplaceBlock(Settings settings) {
