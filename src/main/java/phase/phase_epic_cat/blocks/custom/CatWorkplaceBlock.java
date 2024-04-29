@@ -20,10 +20,12 @@ public class CatWorkplaceBlock extends Block
     public CatWorkplaceBlock(Settings settings) {
         super(settings);
         setDefaultState(getDefaultState().with(IS_CAT_PRESENT, false));
+
     }
 
     @Override
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder)
+    {
         builder.add(IS_CAT_PRESENT);
     }
 
@@ -32,7 +34,7 @@ public class CatWorkplaceBlock extends Block
         if (!world.isClient) {
             player.sendMessage(Text.literal("Hello, world!"), false);
             world.setBlockState(pos, state.with(IS_CAT_PRESENT, true));
-            System.out.println(world.getTime());
+            System.out.println(world.getTimeOfDay() % 24000);
             //if that yields 1000, then we can spawn cats?
             System.out.println(world.getTimeOfDay());
         }
@@ -49,4 +51,7 @@ public class CatWorkplaceBlock extends Block
         world.setBlockState(pos, state.with(IS_CAT_PRESENT, false));
         super.onSteppedOn(world, pos, state, entity);
     }
+
+    //method that runs at a certain time in game?
+
 }
