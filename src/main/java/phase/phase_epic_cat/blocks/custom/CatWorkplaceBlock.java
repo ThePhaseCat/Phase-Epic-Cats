@@ -56,7 +56,4 @@ public class CatWorkplaceBlock extends Block
         world.setBlockState(pos, state.with(IS_CAT_PRESENT, false));
         super.onSteppedOn(world, pos, state, entity);
     }
-
-    //method that runs at a certain time in game?
-
 }

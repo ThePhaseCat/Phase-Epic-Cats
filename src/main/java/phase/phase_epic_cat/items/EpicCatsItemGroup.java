@@ -20,10 +20,11 @@ public class EpicCatsItemGroup
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.name"))
                     .icon(() -> new ItemStack(EpicCatItems.TEST_ITEM)).entries((displayContext, entries) -> {
                         entries.add(EpicCatItems.TEST_ITEM);
+                        entries.add(EpicCatItems.CAT_EMBRYO);
                         entries.add(EpicCatBlocks.TEST_BLOCK.asItem());
                         entries.add(EpicCatBlocks.CAT_WORKPLACE_BLOCK.asItem());
 
-                        entries.add(Items.DIAMOND);
+                        //entries.add(Items.DIAMOND);
 
 
                     }).build());

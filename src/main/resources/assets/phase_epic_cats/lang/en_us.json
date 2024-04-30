@@ -2,6 +2,7 @@
     "itemgroup.name": "Phase's Epic Cats",
 
     "item.phase_epic_cats.test_item": "Test Item",
+    "item.phase_epic_cats.cat_embryo": "Cat Embryo",
 
     "block.phase_epic_cats.test_block": "Test Block",
     "block.phase_epic_cats.cat_workplace_block": "Cat Workplace Block"

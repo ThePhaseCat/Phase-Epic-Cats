@@ -13,9 +13,14 @@ public class EpicCatItems
 {
     public static final Item TEST_ITEM = registerItem("test_item", new Item(new Item.Settings()));
 
+    //cat embryo is the "base" egg that you need to combine with other items
+    //to get a cat spawn egg of that type
+    public static final Item CAT_EMBRYO = registerItem("cat_embryo", new Item(new Item.Settings()));
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries)
     {
         entries.add(TEST_ITEM);
+        entries.add(CAT_EMBRYO);
     }
 
     private static Item registerItem(String name, Item item)

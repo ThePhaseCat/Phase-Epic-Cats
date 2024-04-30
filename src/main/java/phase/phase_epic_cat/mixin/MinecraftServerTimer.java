@@ -21,7 +21,7 @@ public abstract class MinecraftServerTimer implements MinecraftServerTimerAccess
     private void phaseEpicCat_onTick(BooleanSupplier shouldKeepTicking, CallbackInfo ci) {
         if (--this.phaseEpicCat_ticksUntilDay <= 0L) {
             PhaseEpicCat.LOGGER.info("MinecraftServerTimer mixin tick");
-            PhaseEpicCat.EVENT_HANDLER.doDaytimeEvents((MinecraftServer) (Object) this);
+            //PhaseEpicCat.EVENT_HANDLER.doDaytimeEvents((MinecraftServer) (Object) this);
         }
     }
 
